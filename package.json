@@ -1,0 +1,31 @@
+{
+  "name": "thurgobuild",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --recursive --reporter list",
+    "cdn": "gulp publish",
+    "gulp": "gulp && gulp publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clocked0ne/thurgobuild.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-awspublish": "^3.0.1",
+    "gulp-bundle-assets": "^2.25.0",
+    "gulp-imagemin": "^2.3.0",
+    "imagemin-pngquant": "^4.2.0",
+    "mocha": "^2.4.0"
+  },
+  "engines": {
+    "node": "^6.1.0",
+    "npm": "^3.8.6"
+  }
+}
