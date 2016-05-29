@@ -5,6 +5,9 @@ pids/*.pid
 # Gulp output logging
 .awspublish-workray-cdn
 
+# main config file
+config/config.js
+
 # node-waf configuration
 .lock-wscript
 

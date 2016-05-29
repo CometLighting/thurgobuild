@@ -1,0 +1,216 @@
+/* NOTE:
+--------
+PLACE HERE YOUR OWN CSS AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS. */
+
+iframe[name='google_conversion_frame']{height:0!important;width:0!important;line-height:0!important;font-size:0!important;margin-top:-13px;float:left;}
+
+.workrayPink{background-color:#de588a!important;}
+.workrayPink-text{color:#de588a!important;}
+.workrayPurple{background-color:#7d588a!important;}
+.workrayPurple-text{color:#7d588a!important;}
+.workrayBlue{background-color:#7dcdd2!important;}
+.workrayBlue-text{color:#7dcdd2!important;}
+.workrayDarkBlue{background-color:#1b1435!important;}
+.workrayDarkBlue-text{color:#1b1435!important;}
+.workrayGrey{background-color:#e5e5e5!important;}
+
+.fullheight{height:80%;}
+.centered{margin-left:auto;margin-right:auto;}
+.bullets li{list-style: disc;margin: 10px 20px;}
+
+#toast-container{display:block;position:fixed;z-index:10000;}
+.toast{border-radius:2px;top:0;width:auto;clear:both;margin-top:10px;position:relative;max-width:100%;height:auto;min-height:48px;line-height:1.5em;word-break:break-all;background-color:#323232;padding:10px 25px;font-size:1.1rem;font-weight:300;color:#fff;display:flex;align-items:center;justify-content:space-between;}
+.toast .btn,.toast .btn-large,.toast .btn-flat{margin:0;margin-left:3rem;}
+.toast.rounded{border-radius:24px;}
+@media only screen and (max-width: 600px){
+	#toast-container{min-width:100%;bottom:0%;}
+	.toast{width:100%;border-radius:0;}
+}
+@media only screen and (min-width: 601px) and (max-width: 992px){
+	#toast-container{left:5%;bottom:7%;max-width:90%;}
+	.toast{float:left;}
+}
+@media only screen and (min-width: 993px){
+	#toast-container{top:10%;right:7%;max-width:86%;}
+	.toast{float:right;}
+}
+
+.icons{display:block;}
+.svg-bg .icon-icon1,.svg-bg .icon-icon2,.svg-bg .icon-icon3,.svg-bg .icon-icons1,.svg-bg .icon-icons2,.svg-bg .icon-w{background-image:url(images/sprite.svg);}
+.icon-icon1,.icon-icon2,.icon-icon3,.icon-icons1,.icon-icons2,.icon-w{background-image:url(images/sprite.png);background-repeat:no-repeat;}
+.icon-icon1,.icon-icon1\:regular{background-position:-43px 0;}
+.icon-icon1-dims{width:180px;height:258px}
+.icon-icon2,.icon-icon2\:regular{background-position:-43px -258px;}
+.icon-icon2-dims{width:180px;height:258px}
+.icon-icon3,.icon-icon3\:regular{background-position:-43px -516px;}
+.icon-icon3-dims{width:180px;height:258px}
+.icon-icons1,.icon-icons1\:regular{background-position:0 -774px;}
+.icon-icons1-dims{width:400px;height:339px}
+.icon-icons2,.icon-icons2\:regular{background-position:0 -1113px;}
+.icon-icons2-dims{width:400px;height:186px;}
+.icon-w,.icon-w\:regular{background-position:-13px -659px;background-size:200px;}
+.icon-w-dims{width:60px;height:50px;}
+@media screen and (max-width:600px){
+	.icon-icons1-dims{width:300px;height:280px;background-size:cover;background-position:0 -550px;}
+	.icon-icons2-dims{width:300px;height:150px;background-size:cover;background-position:0 -855px;}
+}
+@media only screen and (min-width:1024px) and (max-width:1279px){
+	.icon-icons2-dims{width:320px;height:186px;background-size:cover;background-position:0 -865px;}
+}
+@media only screen and (min-width:1127px) and (max-width:1599px){
+	.icon-icons1-dims{width:400px;height:300px;background-size:cover;background-position:0 -780px;}
+}
+@media only screen and (min-width:1280px) and (max-width:1659px){
+	.icon-icons2-dims{width:320px;height:186px;background-size:cover;background-position:0 -865px;}
+}
+/* Remove menu items that do not fit in landscape phone viewports */
+@media only screen and (min-device-width:320px) and (max-device-width:640px) and (orientation:landscape){
+	.ui.sidebar.left.dashboard.menu .item.settings,.ui.sidebar.left.dashboard.menu .item.servNav,.ui.sidebar.left.dashboard.menu .item.feedback{display:none;}
+}
+/* iPhone 4 small screen dashboard toggle menu fix */
+@media only screen and (min-device-width:320px) and (max-device-width:480px) and (max-device-height:480px) and (-webkit-min-device-pixel-ratio:2){
+	.ui.sidebar.left.dashboard.menu .item.settings{display:none;}
+}
+.workray.dashboard #main{padding-bottom:7rem;}
+.workray.dashboard body.pushable > .pusher{background:#dfdfdf;}
+.workray header{background:#382340;box-shadow:-1px 3px 1px -1px rgba(0,0,0,0.1);}
+.workray .ui.text.secondary.menu{margin:0 -0.5em;}
+.workray.dashboard .ui.text.secondary.menu{margin:0 -0.5em 1em;}
+.workray.dashboard .ui.text.secondary.menu .logo{left:-75px;}
+.workray.dashboard .ui.text.secondary.menu .item{text-align:left;justify-content:initial;}
+
+.ui.left.borderless.dashboard.menu{background:#382340;}
+.ui.left.borderless.dashboard.menu .logo{background:#000;padding-top:1.5em;padding-bottom:1.5em;box-shadow:-1px 3px 1px -1px rgba(0,0,0,0.6);}
+.ui.sidebar.vertical.dashboard.menu > .item:first-child{background:#000;}
+.ui.dashboard.menu .bottom .item:last-child{border-top:1px solid grey;}
+.ui.vertical.dashboard.menu .bottom,.workray.dashboard footer.ui.segment{position:absolute;bottom:0;width:100%;}
+
+.workray.dashboard .ui.stats.card > .content{padding: 2em 1em;}
+.workray.dashboard .ui.statistic{cursor:pointer;margin:0.5rem 0 1rem;}
+.workray.dashboard .ui.statistic > .label{text-transform:inherit;}
+.workray.dashboard .ui.huge.statistic > .label{font-size:1.5rem;}
+.workray.dashboard .ui.green.ribbon.label{margin:0 -1.2em 0 0;top:-0.4rem;}
+.workray.dashboard .ui.equal.width.grid > .statistic{margin:0 1.5em 0;}
+
+.workray.dashboard .ui.attached.segment.topPicksAttached{background:#fff;border-bottom:0;padding-top:2rem;padding-bottom:0;}
+.workray.dashboard .topPicks .topPick .header{display:block;text-align:center;}
+.workray.dashboard .topPicks .topPick .description p{text-align:center;}
+.workray.dashboard .topPicks .topPick .image{margin:1em auto;width:40px;}
+.workray.dashboard .topPicks .ui.divided.items > .item:last-child{padding-bottom:1rem!important;border-bottom:1px solid rgba(34,36,38,.15);}
+
+.workray.about .index-banner{background-image:url(images/backgrounds/default.jpg)!important;background-repeat:no-repeat;background-position:top;background-size:cover;}
+.workray.about .interest{padding:4rem 0;background-position:bottom;}
+.workray.about .masthead.segment{min-height:560px;padding:1em 0;background:transparent!important;}
+.workray.about .masthead .brand-logo img{max-width:100%;max-height:50px;}
+.workray.about .masthead .ui.menu .ui.button{margin-left:0.5em;}
+.workray.about .masthead h2{font-size:1.687em;font-weight:normal;padding-bottom:1em;}
+.workray.about .ui.vertical.stripe{padding:6em 0;}
+.workray.about .ui.vertical.stripe h3{font-size:2em;}
+.workray.about .ui.vertical.stripe .button + h3,.workray.about .ui.vertical.stripe p + h3{margin-top:3em;}
+.workray.about .ui.vertical.stripe .floated.image{clear:both;}
+.workray.about .ui.vertical.stripe p{font-size:1.33em;}
+.workray.about .threeBlocks{background:#e5e5e5;padding-bottom:4em;}
+.workray.about .threeBlocks h3{font-size:1.572em;}
+.workray.about .threeBlocks p{font-size:1.286em;}
+.workray.about .icon-block{padding:0 1.8rem;}
+.workray.about .icon-block .material-icons{font-size:inherit;}
+.workray.about .icon-block .light{font-size:1.3rem;}
+.workray.about .subscribe{margin-left:auto;margin-right:auto;background:rgba(0,0,0,0.5);width:100%;max-width:800px;}
+.workray.about .basic.subscribe .ui.grid > .row > .column{padding:0.5rem 0;}
+.workray.about footer.page-footer{margin:0;}
+@media screen and (max-width:600px){
+	.workray.about .basic.subscribe{padding-left:0;padding-right:0;}
+	.ui.message.share{padding:1em;}
+	.ui.message.share .ui.button{display:block;}
+	.share .ui.grid > .socialLinks > .column[class*="eight wide mobile"]{width:100%!important;margin:0.5em 0;}
+}
+
+.workray.terms #content a{text-decoration:underline;}
+
+.workray.dashboard #location ::-webkit-input-placeholder{color:#fff!important;}
+.workray.dashboard #location :-moz-placeholder{color:#fff!important;}
+.workray.dashboard #location ::-moz-placeholder{color:#fff!important;}
+.workray.dashboard #location :-ms-input-placeholder{color:#fff!important;}
+.workray.dashboard #location_criteria ::-webkit-input-placeholder{color:#fff!important;}
+.workray.dashboard #location_criteria :-moz-placeholder{color:#fff!important;}
+.workray.dashboard #location_criteria ::-moz-placeholder{color:#fff!important;}
+.workray.dashboard #location_criteria :-ms-input-placeholder{color:#fff!important;}
+.workray.dashboard #location,.workray.dashboard #location_criteria{padding-left:0!important;}
+
+.onboarding.field{background:0 0;border-bottom:1px solid #999;display:inline-block;padding:0 6px;margin-bottom:10px;color:#444;vertical-align:middle;width:100%;max-width:100%;line-height:22px;cursor:text;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.onboarding.field.active{border-bottom-color:#7d588a;-webkit-box-shadow:0 1px 0 0 #7d588a;-moz-box-shadow:0 1px 0 0 #7d588a;box-shadow:0 1px 0 0 #7d588a;outline:0}
+.onboarding.field.invalid{border-bottom-color:#db2828;-webkit-box-shadow:0 1px 0 0 #db2828;-moz-box-shadow:0 1px 0 0 #db2828;box-shadow:0 1px 0 0 #db2828;outline:0}
+.onboarding.field input{border:none;box-shadow:none;outline:0;background-color:transparent;padding:0;margin:0;width:auto!important;max-width:inherit}
+.onboarding.field input::-moz-placeholder{color:#777;opacity:1}
+.onboarding.field input:-ms-input-placeholder{color:#777}
+.onboarding.field input::-webkit-input-placeholder{color:#777}
+.onboarding.field input:focus{border:none!important;box-shadow:none!important}
+.onboarding.field .tt-hint{position:relative!important}
+.onboarding.field .tt-input{position:absolute!important;left:0;width:100%!important}
+.onboarding.field .tt-dropdown-menu{min-width:300px;max-width:100%;padding:10px 0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:#fff;-webkit-box-shadow:0 2px 5px rgba(0,0,0,.35);-moz-box-shadow:0 2px 5px rgba(0,0,0,.35);box-shadow:0 2px 5px rgba(0,0,0,.35)}
+.onboarding.field .tt-dropdown-menu .tt-dataset-skills{line-height:1.1rem!important;padding:2px 10px!important}
+.onboarding.field .tt-dropdown-menu .tt-cursor{background:#00bfff;color:#fff}
+
+#notificationCoach > .ui.container{width:90.5%;margin:0 0 2em!important;text-align:center;}
+#notificationCoach .ui.container .ui.message{text-align:left;margin:0 auto;padding-right:3rem;cursor:pointer;}
+
+.ui.secondary.menu .toc.item{display:block;}
+.ui.left.fixed.vertical.menu{display:none;}
+
+@media only screen and (min-width:601px) and (max-width:992px){
+	#yourJobSites .btn-large i{display:none;}
+	#yourJobSites .btn-large{padding-left:1rem;padding-right:1rem;text-transform:capitalize;}
+}
+.workray.dashboard #noBoards .successIcons{float:right;}
+.workray.dashboard #noBoards .boardIconWrapper{padding-left:1rem;}
+.workray.dashboard #noBoards .boardIconWrapper img{max-width:40px;}
+@media screen and (max-width:600px){
+	.materialize-tags{margin-top:8px;}
+	.workray.dashboard #noBoards{padding-top:0.5rem;}
+	.workray.dashboard #noBoards .successIcons{float:none;text-align:center;padding-top:1rem;clear:both;}
+	.workray.dashboard #noBoards h4{font-size:1.7rem;}
+	.workray.dashboard #noBoards h5{font-size: 1.3rem;padding-top:1rem;}
+	.workray.dashboard #onboarding.modal{width:90%;}
+	.workray.dashboard #onboarding [type="checkbox"] + label{padding-left:25px;}
+}
+@media screen and (max-width:767px){
+	#onboarding{margin-bottom:5rem;}
+	#onboarding + .topPicks{display:none;}
+	.ui.stackable.grid > .column:not(.row){padding:0.5rem!important;}
+	.ui.form .fields > .four.wide.field{width:50%!important;}
+	.workray.dashboard .ui.attached.segment.topPicksAttached{padding-bottom:1rem;}
+	.workray.dashboard .ui.items > .item:not(.topPick) > .content > .list{padding-right:2rem;}
+	.workray.dashboard .ui.items .item:not(.topPick) .chip{position:absolute;right:10px;margin-top:-2.25rem;}
+	.workray.dashboard .ui.items .item:not(.topPick) .chip .image{width:30px;}
+	.workray.dashboard .ui.modal > .content{margin-top:2rem;}
+	.workray.dashboard .topPicks #topJobs{margin-top:0;}
+	#notificationCoach{padding:0 0.5rem;}
+	#notificationCoach .ui.message .header + p,
+	#notificationCoach .button{display:none;}
+}
+@media only screen and (min-width:767px){
+	html.ios,html.ios body{height:100%!important;}
+	#notificationCoach > .ui.container{margin:0 1.5em 2em!important;}
+	.workray.dashboard .ui.statistic{margin-top:0;}
+}
+@media only screen and (min-width:767px) and (max-width:1023px){
+	.ui.card > .content,.ui.cards > .card > .content{font-size:1.1rem;}
+}
+@media only screen and (min-width:993px){
+	.workray.dashboard #yourJobSites .jobboards{width:calc(50% - 1.7rem);}
+	.workray.dashboard #content{margin:1rem 0;padding:1em;}
+	.workray.dashboard #mail-app{margin-left:auto!important;}
+}
+@media only screen and (min-width:1024px){
+	.ui.secondary.menu .toc.item{display:none;}
+	.workray.dashboard .ui.secondary.menu .logo.item{display:none;}
+	.workray.dashboard header{display:none;height:67px;background:#fff;}
+	.ui.left.fixed.vertical.menu{display:block;}
+	.workray.dashboard #dash{width:calc(100% - 252px - 1rem)!important;}
+	.workray.dashboard footer.ui.vertical.segment{width:calc(100% - 252px);right:0;padding-left:2rem;}
+	#notificationCoach > .ui.container{width:95.9%;margin:0 0 2em!important;}
+}
+@media only screen and (min-width:1200px){
+	.workray.dashboard #mail-app,.workray.dashboard footer .ui.container{width:auto;}
+	.workray.dashboard .ui.divided.items > .item{padding:1.3em 1.5rem;}
+}
